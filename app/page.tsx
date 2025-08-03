@@ -110,18 +110,24 @@ export default function SnookTokenWebsite() {
         {/* Main Content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedSection animation="fadeInUp">
-            <h2 className="text-5xl md:text-7xl font-bold text-blue-400 mb-8 font-hero">SNOOK</h2>
+            <h2 className="text-5xl md:text-7xl font-bold text-blue-400 mb-4 font-hero">SNOOK</h2>
+            <p className="text-2xl md:text-3xl text-white mb-8 font-hero">The Royal Cat Token</p>
           </AnimatedSection>
 
           <AnimatedSection animation="fadeInUp" delay={200}>
             <div className="flex items-center justify-center mb-8">
               <span className="text-blue-400 text-2xl mr-4 font-hero">+</span>
               <p className="text-lg md:text-xl max-w-2xl leading-relaxed font-body">
-                The coolest cat in the crypto jungle! Built on Base Network and available on Ape Store. SNOOK brings
-                smooth moves and smart trades to the DeFi ecosystem. Join the royal revolution and rule your way to
-                success!
+                The coolest cat in the crypto jungle. Built on the lightning-fast Base Network and available exclusively
+                on Ape Store, $SNOOK brings smooth moves and smart trades to the DeFi ecosystem.
               </p>
             </div>
+          </AnimatedSection>
+
+          <AnimatedSection animation="fadeInUp" delay={300}>
+            <p className="text-xl md:text-2xl text-blue-400 mb-12 font-hero">
+              Join the royal revolution. Rule the chain. Trade like a king.
+            </p>
           </AnimatedSection>
 
           <AnimatedSection animation="fadeInUp" delay={400}>
@@ -146,7 +152,8 @@ export default function SnookTokenWebsite() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex items-center justify-between text-white font-bold text-lg overflow-hidden">
               <div className="animate-marquee whitespace-nowrap font-crypto">
-                ABOUT SNOOK • COOL CAT • BASE NETWORK • APE STORE • ABOUT SNOOK • COOL CAT • BASE NETWORK • APE STORE •
+                ABOUT SNOOK • ROYAL CAT • BASE NETWORK • APE STORE • ABOUT SNOOK • ROYAL CAT • BASE NETWORK • APE STORE
+                •
               </div>
             </div>
           </div>
@@ -191,12 +198,16 @@ export default function SnookTokenWebsite() {
               <AnimatedSection animation="fadeInRight" delay={400}>
                 <div className="space-y-6">
                   <p className="text-lg leading-relaxed font-body">
-                    SNOOK isn't just another meme token - it's the coolest operator in the crypto space! Built on the
-                    lightning-fast Base Network, SNOOK offers seamless transactions and unparalleled user experience.
+                    $SNOOK isn't just another meme token – it's a smooth-talking, crown-wearing feline dominating the
+                    Base jungle. Built on the Base Network, SNOOK offers lightning-fast transactions and a meme-worthy
+                    user experience.
                   </p>
                   <p className="text-lg leading-relaxed font-body">
-                    Available exclusively on Ape Store, SNOOK combines the power of community-driven tokenomics with
-                    cutting-edge blockchain technology. Step into the future of DeFi with confidence and style!
+                    SNOOK blends community-powered tokenomics with cutting-edge blockchain technology. From meme lords
+                    to smart traders, this token is built for those who want to conquer DeFi with style.
+                  </p>
+                  <p className="text-xl text-blue-400 font-bold font-hero mb-8">
+                    Become part of the royal community. It's smooth, it's slick, it's SNOOK.
                   </p>
                   <div className="flex flex-wrap gap-4 mt-8">
                     <div className="bg-blue-600 px-4 py-2 rounded-lg font-crypto">BASE NETWORK</div>
@@ -241,10 +252,9 @@ export default function SnookTokenWebsite() {
                 <div className="bg-gray-800 rounded-lg p-8 text-center">
                   <div className="text-6xl mb-4">WALLET</div>
                   <h3 className="text-2xl font-bold text-blue-400 mb-4 font-hero">STEP 1</h3>
-                  <h4 className="text-xl font-bold text-white mb-4 font-body">Get Base Wallet</h4>
+                  <h4 className="text-xl font-bold text-white mb-4 font-body">Get a Wallet</h4>
                   <p className="text-gray-300 font-body">
-                    Download a Base Network compatible wallet like MetaMask or Coinbase Wallet and switch to Base
-                    Network.
+                    Download a Base-compatible wallet like MetaMask or Coinbase Wallet and switch to Base Network.
                   </p>
                 </div>
               </AnimatedSection>
@@ -264,9 +274,9 @@ export default function SnookTokenWebsite() {
                 <div className="bg-gray-800 rounded-lg p-8 text-center">
                   <div className="text-6xl mb-4">STORE</div>
                   <h3 className="text-2xl font-bold text-blue-400 mb-4 font-hero">STEP 3</h3>
-                  <h4 className="text-xl font-bold text-white mb-4 font-body">Buy on Ape Store</h4>
+                  <h4 className="text-xl font-bold text-white mb-4 font-body">Buy $SNOOK</h4>
                   <p className="text-gray-300 font-body">
-                    Visit Ape Store and swap your ETH for $SNOOK tokens using our contract address.
+                    Go to Ape Store and swap your ETH for $SNOOK tokens using our contract address.
                   </p>
                 </div>
               </AnimatedSection>
@@ -288,8 +298,8 @@ export default function SnookTokenWebsite() {
             <div className="max-w-7xl mx-auto px-6">
               <div className="flex items-center justify-between text-white font-bold text-lg overflow-hidden">
                 <div className="animate-marquee whitespace-nowrap font-crypto">
-                  GALLERY & MEMES • SNOOK CONTENT • COOL MOVES • COMMUNITY CREATIONS • CAT MEMES • GALLERY & MEMES •
-                  SNOOK CONTENT • COOL MOVES •
+                  GALLERY & MEMES • SNOOK CONTENT • ROYAL VIBES • COMMUNITY CREATIONS • CAT MEMES • GALLERY & MEMES •
+                  SNOOK CONTENT • ROYAL VIBES •
                 </div>
               </div>
             </div>
@@ -303,9 +313,13 @@ export default function SnookTokenWebsite() {
               <div className="text-center mb-16">
                 <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 font-hero">GALLERY & MEMES</h2>
                 <div className="w-24 h-1 bg-blue-400 mx-auto mb-8"></div>
-                <p className="text-xl text-gray-300 font-body">
-                  Check out our coolest content and funniest community cat memes
+                <p className="text-xl text-gray-300 font-body mb-4">
+                  SNOOK is not just a token. It's a brand, a vibe, and a movement.
                 </p>
+                <p className="text-lg text-gray-300 font-body">
+                  Explore our collection of memes, community art, and content celebrating the royal cat of crypto.
+                </p>
+                <p className="text-2xl text-blue-400 font-bold font-hero mt-6">$SNOOK — Where memes meet money.</p>
               </div>
             </AnimatedSection>
 
@@ -594,8 +608,8 @@ export default function SnookTokenWebsite() {
             <div className="max-w-7xl mx-auto px-6">
               <div className="flex items-center justify-between text-white font-bold text-lg overflow-hidden">
                 <div className="animate-marquee whitespace-nowrap font-crypto">
-                  WELCOME TO SNOOK • BASE NETWORK • APE STORE • COOL MOVES • WELCOME TO SNOOK • BASE NETWORK • APE STORE
-                  • COOL MOVES •
+                  WELCOME TO SNOOK • BASE NETWORK • APE STORE • ROYAL VIBES • WELCOME TO SNOOK • BASE NETWORK • APE
+                  STORE • ROYAL VIBES •
                 </div>
               </div>
             </div>
