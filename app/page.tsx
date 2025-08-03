@@ -7,12 +7,43 @@ import { AnimatedSection } from "@/components/animated-section"
 
 export default function UggoTokenWebsite() {
   const [scrollY, setScrollY] = useState(0)
+  const [activeSection, setActiveSection] = useState("")
 
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY)
+    const handleScroll = () => {
+      setScrollY(window.scrollY)
+
+      // Update active section based on scroll position
+      const sections = ["about", "how-to-buy", "gallery", "tokenomics"]
+      const currentSection = sections.find((section) => {
+        const element = document.getElementById(section)
+        if (element) {
+          const rect = element.getBoundingClientRect()
+          return rect.top <= 100 && rect.bottom >= 100
+        }
+        return false
+      })
+
+      if (currentSection) {
+        setActiveSection(currentSection)
+      }
+    }
+
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      const headerHeight = 80 // Account for fixed header
+      const elementPosition = element.offsetTop - headerHeight
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      })
+    }
+  }
 
   return (
     <div className="min-h-screen bg-gray-900 text-white overflow-x-hidden">
@@ -26,18 +57,38 @@ export default function UggoTokenWebsite() {
         </div>
 
         <nav className="hidden md:flex items-center space-x-8 font-body">
-          <a href="#about" className="font-semibold hover:text-yellow-400 transition-colors">
+          <button
+            onClick={() => scrollToSection("about")}
+            className={`font-semibold hover:text-yellow-400 transition-colors ${
+              activeSection === "about" ? "text-yellow-400" : "text-white"
+            }`}
+          >
             ABOUT
-          </a>
-          <a href="#how-to-buy" className="font-semibold hover:text-yellow-400 transition-colors">
+          </button>
+          <button
+            onClick={() => scrollToSection("how-to-buy")}
+            className={`font-semibold hover:text-yellow-400 transition-colors ${
+              activeSection === "how-to-buy" ? "text-yellow-400" : "text-white"
+            }`}
+          >
             HOW TO BUY
-          </a>
-          <a href="#gallery" className="font-semibold hover:text-yellow-400 transition-colors">
+          </button>
+          <button
+            onClick={() => scrollToSection("gallery")}
+            className={`font-semibold hover:text-yellow-400 transition-colors ${
+              activeSection === "gallery" ? "text-yellow-400" : "text-white"
+            }`}
+          >
             GALLERY & MEMES
-          </a>
-          <a href="#tokenomics" className="font-semibold hover:text-yellow-400 transition-colors">
+          </button>
+          <button
+            onClick={() => scrollToSection("tokenomics")}
+            className={`font-semibold hover:text-yellow-400 transition-colors ${
+              activeSection === "tokenomics" ? "text-yellow-400" : "text-white"
+            }`}
+          >
             TOKENOMICS
-          </a>
+          </button>
         </nav>
 
         <Button className="bg-white text-black hover:bg-gray-200 font-semibold px-6 font-body">Buy $UGGO</Button>
@@ -568,10 +619,20 @@ export default function UggoTokenWebsite() {
         <AnimatedSection animation="fadeInUp">
           <footer className="relative z-10 py-8 px-6 text-center">
             <div className="flex justify-center space-x-8 mb-4">
-              <a href="#" className="text-white hover:text-yellow-400 transition-colors">
+              <a
+                href="https://twitter.com/uggotoken"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-yellow-400 transition-colors"
+              >
                 <Twitter size={24} />
               </a>
-              <a href="#" className="text-white hover:text-yellow-400 transition-colors">
+              <a
+                href="https://t.me/uggotoken"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-yellow-400 transition-colors"
+              >
                 <MessageCircle size={24} />
               </a>
             </div>
