@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Twitter, MessageCircle } from "lucide-react"
 import { AnimatedSection } from "@/components/animated-section"
 
-export default function UggoTokenWebsite() {
+export default function SnookTokenWebsite() {
   const [scrollY, setScrollY] = useState(0)
   const [activeSection, setActiveSection] = useState("")
 
@@ -51,51 +51,51 @@ export default function UggoTokenWebsite() {
       <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-6 md:px-12 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
         <div className="flex items-center space-x-3">
           <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-            <span className="text-2xl">🦍</span>
+            <span className="text-xl font-bold text-white">S</span>
           </div>
-          <h1 className="text-3xl font-bold text-yellow-400 font-hero">UGGO</h1>
+          <h1 className="text-3xl font-bold text-blue-400 font-hero">SNOOK</h1>
         </div>
 
         <nav className="hidden md:flex items-center space-x-8 font-body">
           <button
             onClick={() => scrollToSection("about")}
-            className={`font-semibold hover:text-yellow-400 transition-colors ${
-              activeSection === "about" ? "text-yellow-400" : "text-white"
+            className={`font-semibold hover:text-blue-400 transition-colors ${
+              activeSection === "about" ? "text-blue-400" : "text-white"
             }`}
           >
             ABOUT
           </button>
           <button
             onClick={() => scrollToSection("how-to-buy")}
-            className={`font-semibold hover:text-yellow-400 transition-colors ${
-              activeSection === "how-to-buy" ? "text-yellow-400" : "text-white"
+            className={`font-semibold hover:text-blue-400 transition-colors ${
+              activeSection === "how-to-buy" ? "text-blue-400" : "text-white"
             }`}
           >
             HOW TO BUY
           </button>
           <button
             onClick={() => scrollToSection("gallery")}
-            className={`font-semibold hover:text-yellow-400 transition-colors ${
-              activeSection === "gallery" ? "text-yellow-400" : "text-white"
+            className={`font-semibold hover:text-blue-400 transition-colors ${
+              activeSection === "gallery" ? "text-blue-400" : "text-white"
             }`}
           >
             GALLERY & MEMES
           </button>
           <button
             onClick={() => scrollToSection("tokenomics")}
-            className={`font-semibold hover:text-yellow-400 transition-colors ${
-              activeSection === "tokenomics" ? "text-yellow-400" : "text-white"
+            className={`font-semibold hover:text-blue-400 transition-colors ${
+              activeSection === "tokenomics" ? "text-blue-400" : "text-white"
             }`}
           >
             TOKENOMICS
           </button>
         </nav>
 
-        <Button className="bg-white text-black hover:bg-gray-200 font-semibold px-6 font-body">Buy $UGGO</Button>
+        <Button className="bg-white text-black hover:bg-gray-200 font-semibold px-6 font-body">Buy $SNOOK</Button>
       </header>
 
       {/* Hero Section with Complex Space Background */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 pt-20">
+      <section className="relative min-h-screen flex items-center justify-center px-6 pt-20 bg-gray-900">
         {/* Complex Space Background */}
         <div className="absolute inset-0 z-0">
           <div
@@ -110,16 +110,16 @@ export default function UggoTokenWebsite() {
         {/* Main Content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedSection animation="fadeInUp">
-            <h2 className="text-5xl md:text-7xl font-bold text-blue-400 mb-8 font-hero">MEET UGGO</h2>
+            <h2 className="text-5xl md:text-7xl font-bold text-blue-400 mb-8 font-hero">SNOOK</h2>
           </AnimatedSection>
 
           <AnimatedSection animation="fadeInUp" delay={200}>
             <div className="flex items-center justify-center mb-8">
-              <span className="text-yellow-400 text-2xl mr-4 font-hero">+</span>
+              <span className="text-blue-400 text-2xl mr-4 font-hero">+</span>
               <p className="text-lg md:text-xl max-w-2xl leading-relaxed font-body">
-                Blue gorilla as a new meta in the crypto space by creating daily vlog videos and short movie, talking
-                about everything on crypto. Make an educational content where $UGGO helps onboard newcomers to the
-                crypto world.
+                The slickest snake in the crypto jungle! Built on Base Network and available on Ape Store. SNOOK brings
+                smooth moves and smart trades to the DeFi ecosystem. Join the serpent revolution and slither your way to
+                success!
               </p>
             </div>
           </AnimatedSection>
@@ -127,26 +127,17 @@ export default function UggoTokenWebsite() {
           <AnimatedSection animation="fadeInUp" delay={400}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-semibold font-crypto">
-                BUY $UGGO
+                BUY $SNOOK
               </Button>
               <Button
                 variant="outline"
                 className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-3 text-lg font-semibold bg-transparent font-crypto"
               >
-                DEXSCREENER
+                DEXSCREEN
               </Button>
             </div>
           </AnimatedSection>
         </div>
-
-        {/* Gorilla Character */}
-        <AnimatedSection
-          animation="bounceIn"
-          delay={600}
-          className="absolute bottom-16 right-1/3 w-32 h-40 flex items-end justify-center z-10"
-        >
-          <div className="text-8xl">🦍</div>
-        </AnimatedSection>
       </section>
 
       {/* Blue Section Separator with Scrolling Text */}
@@ -155,8 +146,8 @@ export default function UggoTokenWebsite() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex items-center justify-between text-white font-bold text-lg overflow-hidden">
               <div className="animate-marquee whitespace-nowrap font-crypto">
-                ABOUT UGGO • BLUE GORILLA • CRYPTO EDUCATION • DAILY VLOGS • ABOUT UGGO • BLUE GORILLA • CRYPTO
-                EDUCATION • DAILY VLOGS •
+                ABOUT SNOOK • SLICK SNAKE • BASE NETWORK • APE STORE • ABOUT SNOOK • SLICK SNAKE • BASE NETWORK • APE
+                STORE •
               </div>
             </div>
           </div>
@@ -164,7 +155,7 @@ export default function UggoTokenWebsite() {
       </AnimatedSection>
 
       {/* Sections with Starfield Background */}
-      <div className="relative">
+      <div className="relative bg-gray-900">
         {/* Starfield Background */}
         <div className="absolute inset-0 z-0">
           <div
@@ -180,34 +171,35 @@ export default function UggoTokenWebsite() {
           <div className="max-w-6xl mx-auto">
             <AnimatedSection animation="fadeInUp">
               <div className="text-center mb-16">
-                <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 font-hero">ABOUT UGGO</h2>
-                <div className="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
+                <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 font-hero">ABOUT SNOOK</h2>
+                <div className="w-24 h-1 bg-blue-400 mx-auto mb-8"></div>
               </div>
             </AnimatedSection>
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <AnimatedSection animation="fadeInLeft" delay={200}>
                 <div className="text-center">
-                  <div className="text-9xl mb-6">🦍</div>
-                  <h3 className="text-3xl font-bold text-blue-400 mb-4 font-hero">The Blue Gorilla</h3>
+                  <div className="w-32 h-32 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span className="text-4xl font-bold text-white">SNOOK</span>
+                  </div>
+                  <h3 className="text-3xl font-bold text-blue-400 mb-4 font-hero">The Slick Snake</h3>
                 </div>
               </AnimatedSection>
 
               <AnimatedSection animation="fadeInRight" delay={400}>
                 <div className="space-y-6">
                   <p className="text-lg leading-relaxed font-body">
-                    UGGO is not just another meme token - it's a revolutionary approach to crypto education through
-                    entertainment. Our blue gorilla mascot represents strength, community, and the wild nature of the
-                    crypto market.
+                    SNOOK isn't just another meme token - it's the smoothest operator in the crypto space! Built on the
+                    lightning-fast Base Network, SNOOK offers seamless transactions and unparalleled user experience.
                   </p>
                   <p className="text-lg leading-relaxed font-body">
-                    Through daily vlogs, educational content, and community engagement, UGGO aims to make cryptocurrency
-                    accessible to everyone. We believe learning about crypto should be fun, engaging, and rewarding.
+                    Available exclusively on Ape Store, SNOOK combines the power of community-driven tokenomics with
+                    cutting-edge blockchain technology. Slither into the future of DeFi with confidence and style!
                   </p>
                   <div className="flex flex-wrap gap-4 mt-8">
-                    <div className="bg-blue-600 px-4 py-2 rounded-lg font-crypto">EDUCATIONAL</div>
-                    <div className="bg-yellow-500 px-4 py-2 rounded-lg font-crypto text-black">COMMUNITY</div>
-                    <div className="bg-green-600 px-4 py-2 rounded-lg font-crypto">ENTERTAINING</div>
+                    <div className="bg-blue-600 px-4 py-2 rounded-lg font-crypto">BASE NETWORK</div>
+                    <div className="bg-blue-500 px-4 py-2 rounded-lg font-crypto text-white">APE STORE</div>
+                    <div className="bg-green-600 px-4 py-2 rounded-lg font-crypto">SLICK MOVES</div>
                   </div>
                 </div>
               </AnimatedSection>
@@ -221,8 +213,8 @@ export default function UggoTokenWebsite() {
             <div className="max-w-7xl mx-auto px-6">
               <div className="flex items-center justify-between text-white font-bold text-lg overflow-hidden">
                 <div className="animate-marquee whitespace-nowrap font-crypto">
-                  HOW TO BUY • STEP BY STEP • EASY PROCESS • GET YOUR UGGO • HOW TO BUY • STEP BY STEP • EASY PROCESS •
-                  GET YOUR UGGO •
+                  HOW TO BUY • STEP BY STEP • BASE NETWORK • APE STORE • GET YOUR SNOOK • HOW TO BUY • STEP BY STEP •
+                  BASE NETWORK • APE STORE •
                 </div>
               </div>
             </div>
@@ -235,41 +227,44 @@ export default function UggoTokenWebsite() {
             <AnimatedSection animation="fadeInUp">
               <div className="text-center mb-16">
                 <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 font-hero">HOW TO BUY</h2>
-                <div className="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
-                <p className="text-xl text-gray-300 font-body">Follow these simple steps to get your $UGGO tokens</p>
+                <div className="w-24 h-1 bg-blue-400 mx-auto mb-8"></div>
+                <p className="text-xl text-gray-300 font-body">
+                  Follow these simple steps to get your $SNOOK tokens on Base Network
+                </p>
               </div>
             </AnimatedSection>
 
             <div className="grid md:grid-cols-3 gap-8">
               <AnimatedSection animation="fadeInUp" delay={200}>
                 <div className="bg-gray-800 rounded-lg p-8 text-center">
-                  <div className="text-6xl mb-4">💳</div>
-                  <h3 className="text-2xl font-bold text-yellow-400 mb-4 font-hero">STEP 1</h3>
-                  <h4 className="text-xl font-bold text-white mb-4 font-body">Get a Wallet</h4>
+                  <div className="text-6xl mb-4">WALLET</div>
+                  <h3 className="text-2xl font-bold text-blue-400 mb-4 font-hero">STEP 1</h3>
+                  <h4 className="text-xl font-bold text-white mb-4 font-body">Get Base Wallet</h4>
                   <p className="text-gray-300 font-body">
-                    Download MetaMask or any compatible wallet from the app store or browser extension.
+                    Download a Base Network compatible wallet like MetaMask or Coinbase Wallet and switch to Base
+                    Network.
                   </p>
                 </div>
               </AnimatedSection>
 
               <AnimatedSection animation="fadeInUp" delay={400}>
                 <div className="bg-gray-800 rounded-lg p-8 text-center">
-                  <div className="text-6xl mb-4">💰</div>
-                  <h3 className="text-2xl font-bold text-yellow-400 mb-4 font-hero">STEP 2</h3>
-                  <h4 className="text-xl font-bold text-white mb-4 font-body">Buy ETH</h4>
+                  <div className="text-6xl mb-4">BRIDGE</div>
+                  <h3 className="text-2xl font-bold text-blue-400 mb-4 font-hero">STEP 2</h3>
+                  <h4 className="text-xl font-bold text-white mb-4 font-body">Bridge to Base</h4>
                   <p className="text-gray-300 font-body">
-                    Purchase Ethereum (ETH) from any exchange and send it to your wallet.
+                    Bridge your ETH to Base Network using the official Base bridge or buy ETH directly on Base.
                   </p>
                 </div>
               </AnimatedSection>
 
               <AnimatedSection animation="fadeInUp" delay={600}>
                 <div className="bg-gray-800 rounded-lg p-8 text-center">
-                  <div className="text-6xl mb-4">🔄</div>
-                  <h3 className="text-2xl font-bold text-yellow-400 mb-4 font-hero">STEP 3</h3>
-                  <h4 className="text-xl font-bold text-white mb-4 font-body">Swap for UGGO</h4>
+                  <div className="text-6xl mb-4">STORE</div>
+                  <h3 className="text-2xl font-bold text-blue-400 mb-4 font-hero">STEP 3</h3>
+                  <h4 className="text-xl font-bold text-white mb-4 font-body">Buy on Ape Store</h4>
                   <p className="text-gray-300 font-body">
-                    Use Uniswap or DEX to swap your ETH for $UGGO tokens using our contract address.
+                    Visit Ape Store and swap your ETH for $SNOOK tokens using our contract address.
                   </p>
                 </div>
               </AnimatedSection>
@@ -278,7 +273,7 @@ export default function UggoTokenWebsite() {
             <AnimatedSection animation="scaleIn" delay={800}>
               <div className="text-center mt-12">
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 text-xl font-semibold font-crypto">
-                  BUY ON UNISWAP
+                  BUY ON APE STORE
                 </Button>
               </div>
             </AnimatedSection>
@@ -291,8 +286,8 @@ export default function UggoTokenWebsite() {
             <div className="max-w-7xl mx-auto px-6">
               <div className="flex items-center justify-between text-white font-bold text-lg overflow-hidden">
                 <div className="animate-marquee whitespace-nowrap font-crypto">
-                  GALLERY & MEMES • UGGO CONTENT • VLOGS & VIDEOS • COMMUNITY CREATIONS • FUNNY MEMES • GALLERY & MEMES
-                  • UGGO CONTENT • VLOGS & VIDEOS • COMMUNITY CREATIONS • FUNNY MEMES •
+                  GALLERY & MEMES • SNOOK CONTENT • SLICK MOVES • COMMUNITY CREATIONS • SNAKE MEMES • GALLERY & MEMES •
+                  SNOOK CONTENT • SLICK MOVES •
                 </div>
               </div>
             </div>
@@ -305,94 +300,47 @@ export default function UggoTokenWebsite() {
             <AnimatedSection animation="fadeInUp">
               <div className="text-center mb-16">
                 <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 font-hero">GALLERY & MEMES</h2>
-                <div className="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
+                <div className="w-24 h-1 bg-blue-400 mx-auto mb-8"></div>
                 <p className="text-xl text-gray-300 font-body">
-                  Check out our latest content and funniest community memes
+                  Check out our slickest content and funniest community snake memes
                 </p>
               </div>
             </AnimatedSection>
 
-            {/* Gallery Content */}
-            <div className="mb-16">
-              <AnimatedSection animation="fadeInUp" delay={200}>
-                <h3 className="text-3xl font-bold text-blue-400 mb-8 text-center font-hero">CONTENT GALLERY</h3>
-              </AnimatedSection>
-
-              <div className="grid md:grid-cols-3 gap-6">
-                <AnimatedSection animation="fadeInLeft" delay={300}>
-                  <div className="bg-gray-800 rounded-lg overflow-hidden">
-                    <div className="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                      <div className="text-6xl">🎥</div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-white mb-2 font-hero">Daily Vlogs</h3>
-                      <p className="text-gray-300 font-body">Watch UGGO's daily adventures in the crypto world</p>
-                    </div>
-                  </div>
-                </AnimatedSection>
-
-                <AnimatedSection animation="fadeInUp" delay={500}>
-                  <div className="bg-gray-800 rounded-lg overflow-hidden">
-                    <div className="h-48 bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center">
-                      <div className="text-6xl">📚</div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-white mb-2 font-hero">Educational Content</h3>
-                      <p className="text-gray-300 font-body">Learn crypto basics with UGGO's fun tutorials</p>
-                    </div>
-                  </div>
-                </AnimatedSection>
-
-                <AnimatedSection animation="fadeInRight" delay={700}>
-                  <div className="bg-gray-800 rounded-lg overflow-hidden">
-                    <div className="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
-                      <div className="text-6xl">🎬</div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-white mb-2 font-hero">Short Movies</h3>
-                      <p className="text-gray-300 font-body">Entertaining short films featuring our blue gorilla</p>
-                    </div>
-                  </div>
-                </AnimatedSection>
-              </div>
-            </div>
-
             {/* Memes Content */}
             <div>
               <AnimatedSection animation="fadeInUp">
-                <h3 className="text-3xl font-bold text-yellow-400 mb-8 text-center font-hero">COMMUNITY MEMES</h3>
+                <h3 className="text-3xl font-bold text-blue-400 mb-8 text-center font-hero">COMMUNITY MEMES</h3>
               </AnimatedSection>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid md:grid-cols-3 gap-6">
                 <AnimatedSection animation="scaleIn" delay={200}>
-                  <div className="bg-gray-800 rounded-lg p-6 text-center">
-                    <div className="text-8xl mb-4">🦍</div>
-                    <p className="text-lg font-bold text-yellow-400 font-hero">HODL UGGO</p>
-                    <p className="text-sm text-gray-300 font-body">When the market dips but you believe in UGGO</p>
+                  <div className="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/images/meme1.jpg" alt="Cooking up profits meme" className="w-full h-64 object-cover" />
+                    <div className="p-4">
+                      <p className="text-lg font-bold text-blue-400 font-hero">COOKING PROFITS</p>
+                      <p className="text-sm text-gray-300 font-body">When SNOOK is cooking up those gains</p>
+                    </div>
                   </div>
                 </AnimatedSection>
 
                 <AnimatedSection animation="scaleIn" delay={400}>
-                  <div className="bg-gray-800 rounded-lg p-6 text-center">
-                    <div className="text-8xl mb-4">😴</div>
-                    <p className="text-lg font-bold text-blue-400 font-hero">SLEEPING ON GAINS</p>
-                    <p className="text-sm text-gray-300 font-body">UGGO holders sleeping peacefully</p>
+                  <div className="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/images/meme2.jpg" alt="Money stacks meme" className="w-full h-64 object-cover" />
+                    <div className="p-4">
+                      <p className="text-lg font-bold text-blue-400 font-hero">STACKING GAINS</p>
+                      <p className="text-sm text-gray-300 font-body">SNOOK holders counting their profits</p>
+                    </div>
                   </div>
                 </AnimatedSection>
 
                 <AnimatedSection animation="scaleIn" delay={600}>
-                  <div className="bg-gray-800 rounded-lg p-6 text-center">
-                    <div className="text-8xl mb-4">🎥</div>
-                    <p className="text-lg font-bold text-green-400 font-hero">VLOG LIFE</p>
-                    <p className="text-sm text-gray-300 font-body">Daily vlogs keeping the community engaged</p>
-                  </div>
-                </AnimatedSection>
-
-                <AnimatedSection animation="scaleIn" delay={800}>
-                  <div className="bg-gray-800 rounded-lg p-6 text-center">
-                    <div className="text-8xl mb-4">🚀</div>
-                    <p className="text-lg font-bold text-purple-400 font-hero">TO THE MOON</p>
-                    <p className="text-sm text-gray-300 font-body">UGGO preparing for takeoff</p>
+                  <div className="bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/images/meme3.jpg" alt="Building wealth meme" className="w-full h-64 object-cover" />
+                    <div className="p-4">
+                      <p className="text-lg font-bold text-blue-400 font-hero">BUILDING WEALTH</p>
+                      <p className="text-sm text-gray-300 font-body">SNOOK community building the future</p>
+                    </div>
                   </div>
                 </AnimatedSection>
               </div>
@@ -406,8 +354,8 @@ export default function UggoTokenWebsite() {
             <div className="max-w-7xl mx-auto px-6">
               <div className="flex items-center justify-between text-white font-bold text-lg overflow-hidden">
                 <div className="animate-marquee whitespace-nowrap font-crypto">
-                  TOKENOMICS • TOKEN INFO • SUPPLY & DISTRIBUTION • ECONOMICS • TOKENOMICS • TOKEN INFO • SUPPLY &
-                  DISTRIBUTION • ECONOMICS •
+                  TOKENOMICS • TOKEN INFO • BASE NETWORK • APE STORE • SUPPLY & DISTRIBUTION • TOKENOMICS • TOKEN INFO •
+                  BASE NETWORK •
                 </div>
               </div>
             </div>
@@ -420,8 +368,8 @@ export default function UggoTokenWebsite() {
             <AnimatedSection animation="fadeInUp">
               <div className="text-center mb-16">
                 <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 font-hero">TOKENOMICS</h2>
-                <div className="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
-                <p className="text-xl text-gray-300 font-body">Understanding $UGGO token economics</p>
+                <div className="w-24 h-1 bg-blue-400 mx-auto mb-8"></div>
+                <p className="text-xl text-gray-300 font-body">Understanding $SNOOK token economics on Base Network</p>
               </div>
             </AnimatedSection>
 
@@ -429,16 +377,16 @@ export default function UggoTokenWebsite() {
               <div className="space-y-8">
                 <AnimatedSection animation="fadeInLeft" delay={200}>
                   <div className="bg-gray-800 rounded-lg p-6">
-                    <h3 className="text-2xl font-bold text-yellow-400 mb-4 font-hero">Total Supply</h3>
+                    <h3 className="text-2xl font-bold text-blue-400 mb-4 font-hero">Total Supply</h3>
                     <p className="text-4xl font-bold font-crypto">1,000,000,000</p>
-                    <p className="text-gray-300 font-body mt-2">Fixed supply, no additional minting</p>
+                    <p className="text-gray-300 font-body mt-2">Fixed supply on Base Network</p>
                   </div>
                 </AnimatedSection>
 
                 <AnimatedSection animation="fadeInLeft" delay={400}>
                   <div className="bg-gray-800 rounded-lg p-6">
-                    <h3 className="text-2xl font-bold text-red-400 mb-4 font-hero">Liquidity</h3>
-                    <p className="text-4xl font-bold font-crypto text-red-400">BURNED</p>
+                    <h3 className="text-2xl font-bold text-blue-400 mb-4 font-hero">Liquidity</h3>
+                    <p className="text-4xl font-bold font-crypto text-white">BURNED</p>
                     <p className="text-gray-300 font-body mt-2">LP tokens permanently burned</p>
                   </div>
                 </AnimatedSection>
@@ -447,16 +395,16 @@ export default function UggoTokenWebsite() {
               <div className="space-y-8">
                 <AnimatedSection animation="fadeInRight" delay={600}>
                   <div className="bg-gray-800 rounded-lg p-6">
-                    <h3 className="text-2xl font-bold text-blue-400 mb-4 font-hero">Contract</h3>
-                    <p className="text-4xl font-bold font-crypto text-blue-400">RENOUNCED</p>
-                    <p className="text-gray-300 font-body mt-2">Ownership renounced for security</p>
+                    <h3 className="text-2xl font-bold text-blue-400 mb-4 font-hero">Network</h3>
+                    <p className="text-4xl font-bold font-crypto text-blue-400">BASE</p>
+                    <p className="text-gray-300 font-body mt-2">Built on Base for speed & efficiency</p>
                   </div>
                 </AnimatedSection>
 
                 <AnimatedSection animation="fadeInRight" delay={800}>
                   <div className="bg-gray-800 rounded-lg p-6">
-                    <h3 className="text-2xl font-bold text-green-400 mb-4 font-hero">Tax</h3>
-                    <p className="text-4xl font-bold font-crypto text-green-400">0%</p>
+                    <h3 className="text-2xl font-bold text-blue-400 mb-4 font-hero">Tax</h3>
+                    <p className="text-4xl font-bold font-crypto text-white">0%</p>
                     <p className="text-gray-300 font-body mt-2">No buy/sell taxes</p>
                   </div>
                 </AnimatedSection>
@@ -471,7 +419,9 @@ export default function UggoTokenWebsite() {
                     <p className="text-2xl font-bold text-white font-crypto animate-pulse">COMING SOON</p>
                   </div>
                 </div>
-                <p className="text-gray-400 font-body mt-4">Contract will be deployed soon. Stay tuned for updates!</p>
+                <p className="text-gray-400 font-body mt-4">
+                  Contract will be deployed on Base Network soon. Stay tuned for updates!
+                </p>
               </div>
             </AnimatedSection>
           </div>
@@ -483,8 +433,8 @@ export default function UggoTokenWebsite() {
             <div className="max-w-7xl mx-auto px-6">
               <div className="flex items-center justify-between text-white font-bold text-lg overflow-hidden">
                 <div className="animate-marquee whitespace-nowrap font-crypto">
-                  UGGOMAP • EAT SLEEP VLOG • PERFECT ROADMAP • CRYPTO EDUCATION • UGGOMAP • EAT SLEEP VLOG • PERFECT
-                  ROADMAP • CRYPTO EDUCATION •
+                  SNOOKMAP • SLITHER TRADE REPEAT • PERFECT ROADMAP • BASE NETWORK • SNOOKMAP • SLITHER TRADE REPEAT •
+                  PERFECT ROADMAP •
                 </div>
               </div>
             </div>
@@ -497,56 +447,56 @@ export default function UggoTokenWebsite() {
             {/* Title */}
             <AnimatedSection animation="fadeInUp">
               <div className="text-center mb-16">
-                <h2 className="text-6xl md:text-7xl font-bold text-white mb-6 font-hero">UGGOMAP</h2>
+                <h2 className="text-6xl md:text-7xl font-bold text-white mb-6 font-hero">SNOOKMAP</h2>
                 <p className="text-2xl md:text-3xl text-white font-medium font-body">
-                  We have a perfect roadmap broo..
+                  We have the slickest roadmap in crypto..
                 </p>
               </div>
             </AnimatedSection>
 
             {/* Roadmap Process Flow */}
             <div className="relative max-w-4xl mx-auto">
-              {/* Step 1: EAT */}
+              {/* Step 1: SLITHER */}
               <AnimatedSection animation="fadeInUp" delay={200}>
                 <div className="flex items-center justify-center mb-16">
                   <div className="flex items-center space-x-12">
                     <div className="w-48 h-48 flex items-center justify-center relative">
-                      <div className="text-8xl">🦍</div>
-                      <div className="absolute -top-2 -right-4 text-4xl">🍌</div>
+                      <div className="text-8xl">SNOOK</div>
+                      <div className="absolute -top-2 -right-4 text-4xl">FAST</div>
                     </div>
                     <div className="text-center">
-                      <h3 className="text-5xl md:text-6xl font-bold text-white font-hero">EAT</h3>
-                      <div className="w-16 h-1 bg-yellow-400 mx-auto mt-4"></div>
+                      <h3 className="text-5xl md:text-6xl font-bold text-white font-hero">SLITHER</h3>
+                      <div className="w-16 h-1 bg-blue-400 mx-auto mt-4"></div>
                     </div>
                   </div>
                 </div>
               </AnimatedSection>
 
-              {/* Connecting Line 1: EAT to VLOGGING */}
+              {/* Connecting Line 1: SLITHER to TRADING */}
               <AnimatedSection animation="fadeIn" delay={400}>
                 <div className="flex justify-center mb-8">
-                  <div className="w-0.5 h-16 border-l-4 border-dashed border-yellow-400"></div>
+                  <div className="w-0.5 h-16 border-l-4 border-dashed border-blue-400"></div>
                 </div>
                 <div className="flex justify-center mb-8">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center">
                     <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
                   </div>
                 </div>
                 <div className="flex justify-center mb-16">
-                  <div className="w-0.5 h-16 border-l-4 border-dashed border-yellow-400"></div>
+                  <div className="w-0.5 h-16 border-l-4 border-dashed border-blue-400"></div>
                 </div>
               </AnimatedSection>
 
-              {/* Step 2: VLOGGING */}
+              {/* Step 2: TRADING */}
               <AnimatedSection animation="fadeInUp" delay={600}>
                 <div className="flex items-center justify-center mb-16">
                   <div className="flex items-center space-x-12">
                     <div className="text-center">
-                      <h3 className="text-5xl md:text-6xl font-bold text-white font-hero">VLOGGING</h3>
-                      <div className="w-16 h-1 bg-yellow-400 mx-auto mt-4"></div>
+                      <h3 className="text-5xl md:text-6xl font-bold text-white font-hero">TRADING</h3>
+                      <div className="w-16 h-1 bg-blue-400 mx-auto mt-4"></div>
                     </div>
                     <div className="w-48 h-48 flex items-center justify-center relative">
-                      <div className="text-8xl">🦍</div>
+                      <div className="text-8xl">SNOOK</div>
                       <div className="absolute -top-2 -right-2 w-12 h-16 bg-gray-700 rounded-lg transform rotate-12 flex flex-col">
                         <div className="w-full h-10 bg-gray-800 rounded-t-lg"></div>
                         <div className="flex-1 bg-blue-500 rounded-b-lg flex items-center justify-center">
@@ -558,40 +508,35 @@ export default function UggoTokenWebsite() {
                 </div>
               </AnimatedSection>
 
-              {/* Connecting Line 2: VLOGGING to SLEEPING */}
+              {/* Connecting Line 2: TRADING to REPEAT */}
               <AnimatedSection animation="fadeIn" delay={800}>
                 <div className="flex justify-center mb-8">
-                  <div className="w-0.5 h-16 border-l-4 border-dashed border-yellow-400"></div>
+                  <div className="w-0.5 h-16 border-l-4 border-dashed border-blue-400"></div>
                 </div>
                 <div className="flex justify-center mb-8">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center">
                     <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
                   </div>
                 </div>
                 <div className="flex justify-center mb-16">
-                  <div className="w-0.5 h-16 border-l-4 border-dashed border-yellow-400"></div>
+                  <div className="w-0.5 h-16 border-l-4 border-dashed border-blue-400"></div>
                 </div>
               </AnimatedSection>
 
-              {/* Step 3: SLEEPING */}
+              {/* Step 3: REPEAT */}
               <AnimatedSection animation="fadeInUp" delay={1000}>
                 <div className="flex items-center justify-center">
                   <div className="flex items-center space-x-12">
                     <div className="w-48 h-48 flex items-center justify-center relative">
-                      {/* Bed */}
-                      <div className="w-40 h-24 bg-blue-400 rounded-lg relative">
-                        {/* Pillows */}
-                        <div className="absolute -top-3 left-2 w-12 h-8 bg-white rounded-full transform -rotate-12"></div>
-                        <div className="absolute -top-3 right-2 w-12 h-8 bg-white rounded-full transform rotate-12"></div>
-                        {/* Sleeping gorilla */}
-                        <div className="absolute top-2 left-1/2 transform -translate-x-1/2 text-4xl">😴</div>
-                        {/* Blanket */}
-                        <div className="absolute bottom-0 left-0 right-0 h-16 bg-blue-500 rounded-b-lg"></div>
+                      {/* Circular arrows */}
+                      <div className="w-40 h-40 border-4 border-blue-400 rounded-full relative flex items-center justify-center">
+                        <div className="text-6xl">LOOP</div>
+                        <div className="absolute -top-2 -right-2 text-3xl">SNOOK</div>
                       </div>
                     </div>
                     <div className="text-center">
-                      <h3 className="text-5xl md:text-6xl font-bold text-white font-hero">SLEEPING</h3>
-                      <div className="w-16 h-1 bg-yellow-400 mx-auto mt-4"></div>
+                      <h3 className="text-5xl md:text-6xl font-bold text-white font-hero">REPEAT</h3>
+                      <div className="w-16 h-1 bg-blue-400 mx-auto mt-4"></div>
                     </div>
                   </div>
                 </div>
@@ -599,7 +544,7 @@ export default function UggoTokenWebsite() {
 
               {/* Process indicators */}
               <div className="absolute left-4 top-1/2 transform -translate-y-1/2 hidden lg:block">
-                <div className="flex flex-col space-y-8 text-yellow-400 font-bold font-crypto">
+                <div className="flex flex-col space-y-8 text-blue-400 font-bold font-crypto">
                   <AnimatedSection animation="fadeInLeft" delay={200}>
                     <div className="text-xl">01</div>
                   </AnimatedSection>
@@ -620,23 +565,23 @@ export default function UggoTokenWebsite() {
           <footer className="relative z-10 py-8 px-6 text-center">
             <div className="flex justify-center space-x-8 mb-4">
               <a
-                href="https://twitter.com/uggotoken"
+                href="https://twitter.com/snooktoken"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-yellow-400 transition-colors"
+                className="text-white hover:text-blue-400 transition-colors"
               >
                 <Twitter size={24} />
               </a>
               <a
-                href="https://t.me/uggotoken"
+                href="https://t.me/snooktoken"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-yellow-400 transition-colors"
+                className="text-white hover:text-blue-400 transition-colors"
               >
                 <MessageCircle size={24} />
               </a>
             </div>
-            <p className="text-gray-400 font-body mb-6">©2025 All Rights Reserved by UGGO</p>
+            <p className="text-gray-400 font-body mb-6">©2025 All Rights Reserved by SNOOK</p>
           </footer>
         </AnimatedSection>
 
@@ -646,8 +591,8 @@ export default function UggoTokenWebsite() {
             <div className="max-w-7xl mx-auto px-6">
               <div className="flex items-center justify-between text-white font-bold text-lg overflow-hidden">
                 <div className="animate-marquee whitespace-nowrap font-crypto">
-                  WELCOME TO UGGO • DAILY VLOGS • SOLID COMMUNITY • META VLOGS ON CRYPTO • WELCOME TO UGGO • DAILY VLOGS
-                  • SOLID COMMUNITY • META VLOGS ON CRYPTO •
+                  WELCOME TO SNOOK • BASE NETWORK • APE STORE • SLICK MOVES • WELCOME TO SNOOK • BASE NETWORK • APE
+                  STORE • SLICK MOVES •
                 </div>
               </div>
             </div>
