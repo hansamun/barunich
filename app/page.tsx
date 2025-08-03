@@ -95,7 +95,10 @@ export default function SnookTokenWebsite() {
         </nav>
 
         {/* Desktop Buy Button */}
-        <Button className="hidden md:block bg-white text-black hover:bg-gray-200 font-semibold px-6 font-body">
+        <Button
+          className="hidden md:block bg-white text-black hover:bg-gray-200 font-semibold px-6 font-body"
+          onClick={() => window.open("https://ape.store/base/0x2dc39f6c55d9c24d43982d2c0e0712c7b891f28d", "_blank")}
+        >
           Buy $SNOOK
         </Button>
 
@@ -143,7 +146,12 @@ export default function SnookTokenWebsite() {
               >
                 TOKENOMICS
               </button>
-              <Button className="bg-white text-black hover:bg-gray-200 font-semibold px-6 font-body w-full mt-4">
+              <Button
+                className="bg-white text-black hover:bg-gray-200 font-semibold px-6 font-body w-full mt-4"
+                onClick={() =>
+                  window.open("https://ape.store/base/0x2dc39f6c55d9c24d43982d2c0e0712c7b891f28d", "_blank")
+                }
+              >
                 Buy $SNOOK
               </Button>
             </nav>
@@ -190,12 +198,20 @@ export default function SnookTokenWebsite() {
 
           <AnimatedSection animation="fadeInUp" delay={400}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 px-4">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 text-base md:text-lg font-semibold font-crypto w-full sm:w-auto">
+              <Button
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 text-base md:text-lg font-semibold font-crypto w-full sm:w-auto"
+                onClick={() =>
+                  window.open("https://ape.store/base/0x2dc39f6c55d9c24d43982d2c0e0712c7b891f28d", "_blank")
+                }
+              >
                 BUY $SNOOK
               </Button>
               <Button
                 variant="outline"
                 className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-6 md:px-8 py-3 text-base md:text-lg font-semibold bg-transparent font-crypto w-full sm:w-auto"
+                onClick={() =>
+                  window.open("https://dexscreener.com/base/0x7D211e8e3979F1191706B2eF51C84a561429e0e7", "_blank")
+                }
               >
                 DEXSCREEN
               </Button>
@@ -353,7 +369,12 @@ export default function SnookTokenWebsite() {
 
             <AnimatedSection animation="scaleIn" delay={800}>
               <div className="text-center mt-8 md:mt-12 px-4">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 md:px-12 py-3 md:py-4 text-lg md:text-xl font-semibold font-crypto w-full sm:w-auto">
+                <Button
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 md:px-12 py-3 md:py-4 text-lg md:text-xl font-semibold font-crypto w-full sm:w-auto"
+                  onClick={() =>
+                    window.open("https://ape.store/base/0x2dc39f6c55d9c24d43982d2c0e0712c7b891f28d", "_blank")
+                  }
+                >
                   BUY ON APE STORE
                 </Button>
               </div>
