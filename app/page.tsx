@@ -178,10 +178,13 @@ export default function SnookTokenWebsite() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <AnimatedSection animation="fadeInLeft" delay={200}>
                 <div className="text-center">
-                  <div className="w-32 h-32 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-4xl font-bold text-white">SNOOK</span>
+                  <div className="w-72 h-72 flex items-center justify-center mx-auto mb-6">
+                    <img
+                      src="/images/snook-about.png"
+                      alt="SNOOK Royal Cat About"
+                      className="w-64 h-64 object-contain"
+                    />
                   </div>
-                  <h3 className="text-3xl font-bold text-blue-400 mb-4 font-hero">The Cool Cat</h3>
                 </div>
               </AnimatedSection>
 
