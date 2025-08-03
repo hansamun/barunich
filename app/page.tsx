@@ -50,8 +50,8 @@ export default function SnookTokenWebsite() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-6 md:px-12 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
         <div className="flex items-center space-x-3">
-          <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-            <span className="text-xl font-bold text-white">S</span>
+          <div className="w-12 h-12 flex items-center justify-center">
+            <img src="/images/snook-logo.png" alt="SNOOK Logo" className="w-12 h-12 object-contain" />
           </div>
           <h1 className="text-3xl font-bold text-blue-400 font-hero">SNOOK</h1>
         </div>
@@ -117,8 +117,8 @@ export default function SnookTokenWebsite() {
             <div className="flex items-center justify-center mb-8">
               <span className="text-blue-400 text-2xl mr-4 font-hero">+</span>
               <p className="text-lg md:text-xl max-w-2xl leading-relaxed font-body">
-                The slickest snake in the crypto jungle! Built on Base Network and available on Ape Store. SNOOK brings
-                smooth moves and smart trades to the DeFi ecosystem. Join the serpent revolution and slither your way to
+                The coolest cat in the crypto jungle! Built on Base Network and available on Ape Store. SNOOK brings
+                smooth moves and smart trades to the DeFi ecosystem. Join the royal revolution and rule your way to
                 success!
               </p>
             </div>
@@ -146,8 +146,7 @@ export default function SnookTokenWebsite() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex items-center justify-between text-white font-bold text-lg overflow-hidden">
               <div className="animate-marquee whitespace-nowrap font-crypto">
-                ABOUT SNOOK • SLICK SNAKE • BASE NETWORK • APE STORE • ABOUT SNOOK • SLICK SNAKE • BASE NETWORK • APE
-                STORE •
+                ABOUT SNOOK • COOL CAT • BASE NETWORK • APE STORE • ABOUT SNOOK • COOL CAT • BASE NETWORK • APE STORE •
               </div>
             </div>
           </div>
@@ -182,24 +181,24 @@ export default function SnookTokenWebsite() {
                   <div className="w-32 h-32 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
                     <span className="text-4xl font-bold text-white">SNOOK</span>
                   </div>
-                  <h3 className="text-3xl font-bold text-blue-400 mb-4 font-hero">The Slick Snake</h3>
+                  <h3 className="text-3xl font-bold text-blue-400 mb-4 font-hero">The Cool Cat</h3>
                 </div>
               </AnimatedSection>
 
               <AnimatedSection animation="fadeInRight" delay={400}>
                 <div className="space-y-6">
                   <p className="text-lg leading-relaxed font-body">
-                    SNOOK isn't just another meme token - it's the smoothest operator in the crypto space! Built on the
+                    SNOOK isn't just another meme token - it's the coolest operator in the crypto space! Built on the
                     lightning-fast Base Network, SNOOK offers seamless transactions and unparalleled user experience.
                   </p>
                   <p className="text-lg leading-relaxed font-body">
                     Available exclusively on Ape Store, SNOOK combines the power of community-driven tokenomics with
-                    cutting-edge blockchain technology. Slither into the future of DeFi with confidence and style!
+                    cutting-edge blockchain technology. Step into the future of DeFi with confidence and style!
                   </p>
                   <div className="flex flex-wrap gap-4 mt-8">
                     <div className="bg-blue-600 px-4 py-2 rounded-lg font-crypto">BASE NETWORK</div>
                     <div className="bg-blue-500 px-4 py-2 rounded-lg font-crypto text-white">APE STORE</div>
-                    <div className="bg-green-600 px-4 py-2 rounded-lg font-crypto">SLICK MOVES</div>
+                    <div className="bg-green-600 px-4 py-2 rounded-lg font-crypto">COOL MOVES</div>
                   </div>
                 </div>
               </AnimatedSection>
@@ -286,8 +285,8 @@ export default function SnookTokenWebsite() {
             <div className="max-w-7xl mx-auto px-6">
               <div className="flex items-center justify-between text-white font-bold text-lg overflow-hidden">
                 <div className="animate-marquee whitespace-nowrap font-crypto">
-                  GALLERY & MEMES • SNOOK CONTENT • SLICK MOVES • COMMUNITY CREATIONS • SNAKE MEMES • GALLERY & MEMES •
-                  SNOOK CONTENT • SLICK MOVES •
+                  GALLERY & MEMES • SNOOK CONTENT • COOL MOVES • COMMUNITY CREATIONS • CAT MEMES • GALLERY & MEMES •
+                  SNOOK CONTENT • COOL MOVES •
                 </div>
               </div>
             </div>
@@ -302,7 +301,7 @@ export default function SnookTokenWebsite() {
                 <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 font-hero">GALLERY & MEMES</h2>
                 <div className="w-24 h-1 bg-blue-400 mx-auto mb-8"></div>
                 <p className="text-xl text-gray-300 font-body">
-                  Check out our slickest content and funniest community snake memes
+                  Check out our coolest content and funniest community cat memes
                 </p>
               </div>
             </AnimatedSection>
@@ -433,8 +432,8 @@ export default function SnookTokenWebsite() {
             <div className="max-w-7xl mx-auto px-6">
               <div className="flex items-center justify-between text-white font-bold text-lg overflow-hidden">
                 <div className="animate-marquee whitespace-nowrap font-crypto">
-                  SNOOKMAP • SLITHER TRADE REPEAT • PERFECT ROADMAP • BASE NETWORK • SNOOKMAP • SLITHER TRADE REPEAT •
-                  PERFECT ROADMAP •
+                  SNOOKMAP • RULE TRADE REPEAT • PERFECT ROADMAP • BASE NETWORK • SNOOKMAP • RULE TRADE REPEAT • PERFECT
+                  ROADMAP •
                 </div>
               </div>
             </div>
@@ -456,23 +455,26 @@ export default function SnookTokenWebsite() {
 
             {/* Roadmap Process Flow */}
             <div className="relative max-w-4xl mx-auto">
-              {/* Step 1: SLITHER */}
+              {/* Step 1: RULE */}
               <AnimatedSection animation="fadeInUp" delay={200}>
                 <div className="flex items-center justify-center mb-16">
                   <div className="flex items-center space-x-12">
                     <div className="w-48 h-48 flex items-center justify-center relative">
-                      <div className="text-8xl">SNOOK</div>
-                      <div className="absolute -top-2 -right-4 text-4xl">FAST</div>
+                      <img
+                        src="/images/snook-king.png"
+                        alt="SNOOK King Cat Head"
+                        className="w-40 h-40 object-contain"
+                      />
                     </div>
                     <div className="text-center">
-                      <h3 className="text-5xl md:text-6xl font-bold text-white font-hero">SLITHER</h3>
+                      <h3 className="text-5xl md:text-6xl font-bold text-white font-hero">RULE</h3>
                       <div className="w-16 h-1 bg-blue-400 mx-auto mt-4"></div>
                     </div>
                   </div>
                 </div>
               </AnimatedSection>
 
-              {/* Connecting Line 1: SLITHER to TRADING */}
+              {/* Connecting Line 1: RULE to TRADING */}
               <AnimatedSection animation="fadeIn" delay={400}>
                 <div className="flex justify-center mb-8">
                   <div className="w-0.5 h-16 border-l-4 border-dashed border-blue-400"></div>
@@ -496,13 +498,11 @@ export default function SnookTokenWebsite() {
                       <div className="w-16 h-1 bg-blue-400 mx-auto mt-4"></div>
                     </div>
                     <div className="w-48 h-48 flex items-center justify-center relative">
-                      <div className="text-8xl">SNOOK</div>
-                      <div className="absolute -top-2 -right-2 w-12 h-16 bg-gray-700 rounded-lg transform rotate-12 flex flex-col">
-                        <div className="w-full h-10 bg-gray-800 rounded-t-lg"></div>
-                        <div className="flex-1 bg-blue-500 rounded-b-lg flex items-center justify-center">
-                          <div className="w-2 h-2 bg-white rounded-full"></div>
-                        </div>
-                      </div>
+                      <img
+                        src="/images/snook-king-full.png"
+                        alt="SNOOK King Cat Full Body Trading"
+                        className="w-44 h-44 object-contain"
+                      />
                     </div>
                   </div>
                 </div>
@@ -528,11 +528,11 @@ export default function SnookTokenWebsite() {
                 <div className="flex items-center justify-center">
                   <div className="flex items-center space-x-12">
                     <div className="w-48 h-48 flex items-center justify-center relative">
-                      {/* Circular arrows */}
-                      <div className="w-40 h-40 border-4 border-blue-400 rounded-full relative flex items-center justify-center">
-                        <div className="text-6xl">LOOP</div>
-                        <div className="absolute -top-2 -right-2 text-3xl">SNOOK</div>
-                      </div>
+                      <img
+                        src="/images/snook-repeat.png"
+                        alt="SNOOK Royal Cat Repeat"
+                        className="w-44 h-44 object-contain"
+                      />
                     </div>
                     <div className="text-center">
                       <h3 className="text-5xl md:text-6xl font-bold text-white font-hero">REPEAT</h3>
@@ -591,8 +591,8 @@ export default function SnookTokenWebsite() {
             <div className="max-w-7xl mx-auto px-6">
               <div className="flex items-center justify-between text-white font-bold text-lg overflow-hidden">
                 <div className="animate-marquee whitespace-nowrap font-crypto">
-                  WELCOME TO SNOOK • BASE NETWORK • APE STORE • SLICK MOVES • WELCOME TO SNOOK • BASE NETWORK • APE
-                  STORE • SLICK MOVES •
+                  WELCOME TO SNOOK • BASE NETWORK • APE STORE • COOL MOVES • WELCOME TO SNOOK • BASE NETWORK • APE STORE
+                  • COOL MOVES •
                 </div>
               </div>
             </div>
